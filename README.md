@@ -18,6 +18,23 @@ bundle
 bundle exec rails g solidus_pca_address_validation:install
 ```
 
+
+Feature Road Map
+-----------------
+
+## Round One
+- [ ] Set up test account for local development
+- [ ] Get [address autocomplete bound fields](http://www.pcapredict.com/en-gb/address-validation/try-it-now/) working on address checkout page
+  - Get JS sample code from PCA
+  - Click on autocomplete address and autofill the rest of the form
+  - Click on any address field to trigger autocomplete dropdown
+  - Autocomplete will work in a suggestive manner, user will still be able to enter address manually in checkout
+
+## Round Two
+- [ ] In case address does not come up in autocomplete, create a way to warn the client of the failed validation
+- [ ] Add validation button in the admin order panel so an admin can validate an address manually
+
+
 Testing
 -------
 
