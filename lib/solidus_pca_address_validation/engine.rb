@@ -1,6 +1,9 @@
 module SolidusPcaAddressValidation
   class Engine < Rails::Engine
+    require "solidus_core"
+    isolate_namespace Spree
     engine_name 'solidus_pca_address_validation'
+
     config.autoload_paths += %W(#{config.root}/lib)
 
     config.generators do |g|

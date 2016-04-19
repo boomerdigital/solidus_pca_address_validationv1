@@ -1,8 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem "solidus", github: "solidusio/solidus", branch: 'v1.2'
+gem "solidus_auth_devise", "~> 1.2"
 
-group :development, :test do
+group :test, :development do
   gem "pry"
 end
 
