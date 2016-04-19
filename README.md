@@ -5,6 +5,8 @@ SolidusPcaAddressValidation
 Installation
 ------------
 
+Add to your .env the PCA_ACCOUNT_CODE
+
 Add solidus_pca_address_validation to your Gemfile:
 
 ```ruby
@@ -15,7 +17,6 @@ Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g solidus_pca_address_validation:install
 ```
 
 
@@ -23,8 +24,8 @@ Feature Road Map
 -----------------
 
 ## Round One
-- [ ] Set up test account for local development
-- [ ] Get [address autocomplete bound fields](http://www.pcapredict.com/en-gb/address-validation/try-it-now/) working on address checkout page
+- [x] Set up test account for local development
+- [x] Get [address autocomplete bound fields](http://www.pcapredict.com/en-gb/address-validation/try-it-now/) working on address checkout page
   - Get JS sample code from PCA
   - Click on autocomplete address and autofill the rest of the form
   - Click on any address field to trigger autocomplete dropdown
